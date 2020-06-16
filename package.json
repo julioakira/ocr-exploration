@@ -1,0 +1,24 @@
+{
+  "name": "ocr-exploration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:server": "nodemon src/app.js",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/app.js"
+  },
+  "repository": "git@github.com:julioakira/ocr-exploration.git",
+  "author": "Julio Akira <julio.akira.pedroso@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "sucrase": "^3.15.0"
+  }
+}
